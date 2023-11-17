@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginFrom</title>
+    <style>
+        .container {
+            width: 70%;
+            height: 500px;
+            border: 7px solid rgba(112, 159, 179, 0.434);
+            margin: auto;
+            margin-top: 100px;
+
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            font-family: Arial;
+        }
+
+        form {
+            width: 80%;
+            border-top: 2px double white;
+            box-shadow: 1px 1px 10px gray;
+            margin-left: 100px;
+            box-sizing: border-box;
+            padding-top: 25px;
+        }
+
+        input[type="text"] {
+            width: 99.5%;
+            height: 40px;
+            border-radius: 2px;
+            border: none;
+        }
+
+        input[type="password"] {
+            width: 99.5%;
+            height: 40px;
+            border-radius: 2px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 50px;
+            background-color: orange;
+            border: none;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 2px;
+        }
+
+        .bx {
+            font-weight: 400;
+            font-size: 1.1rem;
+            font-family: Arial;
+            color: rgb(44, 42, 42);
+        }
+
+        input[type="checkbox"] {
+            color: gray;
+        }
+
+
+        label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: Arial;
+        }
+
+        ::placeholder {
+            font-size: 1rem;
+        }
+
+        a {
+            font-family: Arial;
+            font-size: 1rem;
+            font-weight: 550;
+        }
+    </style>
+</head>
+
+<body style="background:linear-gradient(to right, skyblue,rgb(63, 130, 207))">
+    <div class="container">
+        <h1 style="text-align: center;">Login Form</h1>
+        <form>
+            <label>Username</label><br><br>
+            <input type="text" id="name" placeholder="Enter Username" required><br><br>
+            <label>Password</label><br><br>
+            <input type="password" id="password" placeholder="Enter Password" required><br><br><br>
+            <input type="submit" value="Login" id="submit"><br><br>
+            <div class="box1">
+                <label for="cbox" class="bx"><input type="checkbox" id="cbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
