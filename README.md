@@ -1,0 +1,1 @@
+This repository houses a collection of web forms designed to streamline various processes, such as user registration, sign in, and more. Leveraging a technology stack comprising HTML,CSS and JAVASCRIPT these forms are crafted with the goal of delivering a seamless user experience while ensuring data accuracy.
