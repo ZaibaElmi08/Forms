@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Survey Form</title>
+<style>
+body {
+  background-color: lightblue;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#student-survey-form {
+  width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background:green;
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+</style>
+</head>
+<body>
+  <h2>Student Survey Form</h2>
+<div id="student-survey-form">
+<p>Name</p>
+<input type="text" name="name" placeholder="Your name">
+<br><br>
+<p>Email</p>
+<input type="email" name="email" placeholder="Your email">
+<br><br>
+<p>Age</p>
+<input type="number" name="age" placeholder="Your age">
+<br><br>
+<select name="major">
+  <option value="Student">Student</option>
+<option value="CS">Professor</option>
+<option value="CE">Software Developer</option>
+<option value="EE">Technician</option>
+</select><br><br>
+<p>Would you recommend Computer Science branch to a friend?
+</p>
+<input type="radio" name="recommend" value="Yes"> Yes
+<input type="radio" name="recommend" value="No"> No
+<input type="radio" name="recommend" value="Maybe"> Maybe
+<p>Languages and Frameworks known(check all that apply)</p>
+<input type="checkbox" name="languages[]" value="Python"> C
+<input type="checkbox" name="languages[]" value="Python"> C++
+<input type="checkbox" name="languages[]" value="Python"> C#
+<input type="checkbox" name="languages[]" value="Python"> Python
+<input type="checkbox" name="languages[]" value="JavaScript"> JavaScript
+<input type="checkbox" name="languages[]" value="React"> React
+<input type="checkbox" name="languages[]" value="Angular"> Angular
+<p>Any comments or suggestions</p>
+<textarea name="comments" rows="2" cols="10"></textarea>
+<input type="submit" value="Submit" id="me">
+</div>
+</body>
+</html>

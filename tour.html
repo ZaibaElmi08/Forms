@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking Form</title>
+    <style>
+        .container {
+            width: 100%;
+            border: none;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        .navbar {
+            height: 160px;
+        }
+
+        .navbar img {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 560;
+        }
+
+        input[type="text"] {
+            width: 98%;
+            height: 30px;
+        }
+
+        input[type="email"] {
+            width: 98%;
+            height: 30px;
+        }
+
+        input[type="tel"] {
+            width: 98%;
+            height: 30px;
+        }
+
+        input[type="date"] {
+            width: 98%;
+            height: 30px;
+        }
+
+        form {
+            position: relative;
+            left: 10px;
+        }
+
+        .send input[type="button"] {
+            margin-left: 700px;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            font-size: 0.90rem;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-left: 700px;
+            width: 150px;
+            height: 30px;
+        }
+
+        .navbar h1 {
+            position: relative;
+            bottom: 120px;
+            text-align: center;
+            color: rgb(30, 57, 5);
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzETB4wEf8_hZH_gFwLcB0VoQXoA2utETdrw&usqp=CAU"
+                alt="img">
+            <h1>Tour Booking Form</h1>
+        </div>
+        <form>
+            <label class="required">Name</label><br>
+            <input type="text" id="fname" placeholder="first" required><br><br>
+            <input type="text" id="lname" placeholder="last" required><br><br>
+
+            <label class="required">Email</label><br>
+            <input type="email" id="mail" required="*"><br><br>
+
+            <label class="required">Phone</label><br>
+            <input type="tel" id="num" required="*"><br><br>
+
+            <label class="required">When are you planning to visit?</label><br>
+            <input type="date" id="date" required="*"><br><br>
+
+            <label class="required">How many people are in your group?</label><br>
+            <input type="text" id="count" required="*"><br><br>
+
+            <label class="required">Which tours or events are you most interested in?</label><br>
+            <input type="text" id="interset" required="*"><br><br>
+
+            <label class="required">What is the best way to contact you?</label><br>
+            <input type="checkbox" id="p">
+            <label for="p">Phone</label><br><br>
+            <input type="checkbox" id="e">
+            <label for="e">Email</label><br><br>
+            <input type="checkbox" id="either">
+            <label for="either">Either</label><br><br>
+
+            <label class="required">If phone when is the best time of day for a call-back?</label><br>
+            <input type="radio" id="t1">
+            <label for="t1">8-11 AM</label><br><br>
+            <input type="radio" id="t2">
+            <label for="t2">12-04 PM</label><br><br>
+            <input type="radio" id="t3">
+            <label for="t3">06-10 PM</label><br><br>
+
+            <label class="incress">Anything else we should know?</label><br>
+            <textarea name="aboutyou" id="textarea1" cols="198" rows="6"></textarea>
+             <br><br>
+            <label class="incress">And last, How did you hear about us?</label><br>
+            <textarea name="aboutyou" id="textarea1" cols="198" rows="6"></textarea>
+
+            <div class="send">
+                <input type="button" value="Send" id="sent">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
